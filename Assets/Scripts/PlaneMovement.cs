@@ -54,7 +54,13 @@ public class PlaneMovement : MonoBehaviour
                 Time.timeScale = 0f;
             }
         }
-        
+
+        //Quitting game
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
     }
 }
 
